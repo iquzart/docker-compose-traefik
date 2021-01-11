@@ -12,7 +12,7 @@ http:
         permanent: true
         port: 443  
 
-    demo-whitelist:
+    app-whitelist:
       ipWhiteList:
         sourceRange:
          - 127.0.0.1/32 
