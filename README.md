@@ -54,6 +54,11 @@ config/dynamic/middleware.yml
 docker-compose up -d
 ```
 
+5. Start sample app (Optional)
+```
+docker-compose -f sample-app/goapp-compose.yml up -d
+```
+
 
 License
 -------
