@@ -17,7 +17,7 @@ Features
 
 Requirements
 ------------
-Docker and Docker Compose is required to run the proxy. You may user my [Ansible Role](https://github.com/iquzart/ansiblr-role-docker) to setup the infrastructure.
+Docker and Docker Compose is required to run the proxy. You may user my [Ansible_Role](https://github.com/iquzart/ansible-role-docker) to setup the infrastructure.
 
 
 Deploy Traefik
