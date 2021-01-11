@@ -36,6 +36,8 @@ mkdir -p /opt/containers/traefik
 
 git clone github.com/iquzart/docker-compose-traefik .
 
+chmod 600 acme/acme.json
+
 }
 ```
 
