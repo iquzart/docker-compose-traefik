@@ -4,7 +4,7 @@ http:
     user-auth:
       basicAuth:
         users:
-          - "admin:$apr1$i7a3kbz8$LDQm4Hj1uSeRsNy1B1wBL0"
+          - "admin:$apr1$i7a3kbz8$LDQm4Hj1uSeRsNy1B1wBL0"  #admin:admin
 
     https-redirect:
       redirectScheme:
