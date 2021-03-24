@@ -1,9 +1,9 @@
 version: '3'
 
 services:
-  portainer:
+  go-app:
     image: diquzart/go-app:latest
-    container_name: app1
+    container_name: go-app
     restart: unless-stopped
     security_opt:
       - no-new-privileges:true
@@ -13,11 +13,11 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.app.entrypoints=http"
-      - "traefik.http.routers.app.rule=Host(`hello-app.iquzart.ga`)"
+      - "traefik.http.routers.app.rule=Host(`go-app.$DOMAIN_NAME`)"
       ## Middlewares Rules
       - traefik.http.routers.app.middlewares=https-redirect@file
       ## Router rules secure
-      - traefik.http.routers.app-https.rule=Host(`hello-app.iquzart.ga`)
+      - traefik.http.routers.app-https.rule=Host(`go-app.$DOMAIN_NAME`)
       - traefik.http.routers.app-https.entrypoints=https
       - traefik.http.routers.app-https.tls=true
       - traefik.http.routers.app-https.tls.certresolver=letsencrypt
