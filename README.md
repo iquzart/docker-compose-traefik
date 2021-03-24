@@ -34,6 +34,8 @@ $ docker network create proxy
 
 mkdir -p /opt/containers/traefik
 
+cd /opt/containers/traefik 
+
 git clone https://github.com/iquzart/docker-compose-traefik.git .
 
 chmod 600 config/acme/acme.json
